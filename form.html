@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Welcome to Aspire Systems</title>
+</head>
+
+<body>
+    <form name="Login-form" method="get" target="_blank">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="4" maxlength="15" required><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="10" required><br><br>
+        </div>
+
+        <input type="submit" onclick="send()" value="Login">
+        <input type="reset"><br><br>
+        <script>
+            function send() {
+                alert("You will be logging in..");
+            }
+        </script>
+
+
+        <fieldset>
+            <legend> Cafetaria</legend>
+            <label for="choose">What would you like to have?</label>
+            <div>
+                <input type="radio" id="Coffee" name="hot drinks" value="Coffee">
+                <label for="Coffee">Coffee</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Tea" name="hot drinks" value="Tea">
+                <label for="Tea">Tea</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Lemon tea" name="hot drinks" value="Lemon tea">
+                <label for="Lemon tea">Lemonade</label>
+            </div>
+
+
+        </fieldset>
+
+        <h3> Redbus service</h3>
+        <label for="choose">What did you like about our service?</label><br>
+
+        
+            <input type="checkbox" id="Cleanliness" name="checkbox">
+            <label for="Cleanliness">Cleanliness </label><br>
+
+            <input type="checkbox" name="checkbox" id="Driving">
+            <label for="Driving">Driving</label><br>
+
+            <input type="checkbox" name="checkbox" id="time">
+            <label for="time">Time management</label><br><br>
+            
+
+            <input type="file" name="newfile" id="myfile">
+            <label for="myfile"></label><br><br>
+
+            <label for="mynumber"> How many newspapaers do you need?</label><br><br>
+            <input type="number" name="number" id="mynumber"><br><br>
+
+            <label for="date">Enter your date-of-birth</label><br><br>
+            <input type="date" name="date" id="date"><br><br>
+
+            <label for="mailid">Enter your email</label><br>
+            <input type="email" name="email" id="mailid" placeholder="Email"><br><br>
+
+            <label for="mycolor">Select your favourite colour</label><br>
+            <input type="color" name="color" id="mycolor"><br><br>
+
+            <label for="myrange"> Adjust your audio range</label><br>
+            <input type="range" name="range" id="myrange"><br><br>
+
+            
+
+            <label for="name">Username</label>
+            <input type="text" name="username" id="name"><br><br>
+
+            <label for="myaddress">Address</label>
+            <input type="text" name="Address" id="myaddress"><br><br>
+
+            <label for="mobile">Phone number</label>
+            <input type="tel" name="mobilenumber" id="mobile"><br><br>
+            <input type="image" src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" 
+            width="100px" height="70px" onclick="image()">
+            <script>
+                function image(){
+                    alert("You are submitting the form!")
+                }
+            </script>
+            
+
+
+
+    </form>
+
+</body>
+
+</html>
