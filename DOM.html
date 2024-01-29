@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="demo"> Welcome to the new world!</h1>
+    <img id="myimage" src="rose.jpeg">
+    <p id="new"></p>
+    <script>
+        alert(window.innerHeight);
+
+        document.body.style.background="red";
+        setTimeout(()=> document.body.style.background = "", 1000);
+
+    </script>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Aspire systems";
+
+        document.getElementById("myimage").src="https://media.istockphoto.com/id/523761634/photo/cute-panda-bear-climbing-in-tree.jpg?s=612x612&w=0&k=20&c=TxsmORsbuY1LpxQsc6T8fpWJo7lBwncciYhroAr8rXI="
+
+        document.getElementById("new").innerHTML= "Date :"+Date();
+
+        document.write(Date());
+    </script>
+
+    <ul>
+        <li> Coffee</li>
+        <li> Tea</li>
+    </ul>
+    <ul> 
+        <li> Milkshake</li>
+        <li> Lemonade</li>
+    </ul>
+
+
+    <script>
+        let elements= document.querySelectorAll('ul > li:first-child');
+        for(let elem of elements){
+            alert(elem.innerHTML);
+        }
+    </script>
+</body>
+</html>
+
+        
