@@ -1,0 +1,65 @@
+h1{
+    color:red;
+}
+li{
+list-style-type:'...';
+}
+
+li.welcome,
+span.welcome{
+    color:blueviolet;
+
+}
+
+
+li em{
+    color: brown;
+}
+
+h1+p{
+font-size: 200%;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: solid;
+}
+
+.special{
+    color: rebeccapurple;
+}
+
+.welcome.special{
+    color:black;
+}
+
+
+p{
+    color: red;
+}
+
+*{
+    background-color: aquamarine;
+}
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+  }
+  
+  .notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+  }
+  
+  .notebox.danger {
+    border-color: red;
+    font-weight: bold;
+  }
