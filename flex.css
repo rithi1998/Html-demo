@@ -1,0 +1,26 @@
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 5em;
+}
+#box1{
+    background-color: aquamarine;
+}
+#box2{
+    background-color: rgb(127, 172, 255);
+}
+
+#box3{
+    background-color: rgb(255, 146, 127);
+}
+
+#box4{
+    background-color: rgb(127, 255, 133);
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
