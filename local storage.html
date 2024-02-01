@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    
+    <script>
+        if(typeof(Storage)!=="undefined") {  
+        localStorage.setItem("name","Rithika");  
+        localStorage.setItem("Country", "India");  
+        document.write("Hi"+" "+localStorage.name+","+"I am"+" "+"from"+" "+localStorage.Country);   
+        }  
+        else{  
+        alert("Sorry! your browser is not supporting the browser")  
+        }  
+
+    </script>
+</body>
+</html>
+
+

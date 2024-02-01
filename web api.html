@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="back()">Back</button>
+    <button onclick="go()">Go to profile page</button>
+    <button onclick="next()">Go to next page</button><br><br>
+
+    <button onclick="geo()"> Geolocation</button>
+    <p id="demo"></p>
+    <script>
+        function back(){
+            window.history.back();
+        }
+
+        function go()
+        {
+            window.history.go(4);
+        }
+
+        function next(){
+            window.history.forward();
+        }
+       
+
+
+        
+        
+            const x = document.getElementById("demo");
+            function geo() {
+                if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+                } else { 
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+        
+      
+
+
+</body>
+</html>

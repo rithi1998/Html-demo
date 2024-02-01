@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openFullscreen();">Open Fullscreen</button>
+    <button onclick="closeFullscreen();">Close Fullscreen</button>
+
+    <script>
+        var elem = document.documentElement;
+        function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+            } 
+  
+         }
+
+        function closeFullscreen() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } 
+         }
+        
+        </script>
+</body>
+</html>

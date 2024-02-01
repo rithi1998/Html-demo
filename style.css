@@ -2,7 +2,7 @@ h1{
     color:red;
 }
 li{
-list-style-type:'...';
+list-style-type:circle;
 }
 
 li.welcome,
@@ -63,3 +63,30 @@ p{
     border-color: red;
     font-weight: bold;
   }
+
+  h1:hover{
+    background-color: red;
+  }
+
+  input:focus{
+    background-color: yellow;
+  }
+
+  a[target="_blank"]{
+    background-color: chocolate;
+  }
+div[class^="notebox"]{
+    background-color: darkblue;
+}
+h3:first-child{
+    background-color: rgb(0, 255, 76);
+
+}
+
+p:first-of-type{
+    background-color: rgb(27, 4, 8);
+}
+  
+div:nth-child(2){
+    background-color: darkolivegreen;
+}
