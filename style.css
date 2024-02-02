@@ -2,7 +2,7 @@ h1{
     color:red;
 }
 li{
-list-style-type:circle;
+list-style-type:disc;
 }
 
 li.welcome,
@@ -89,4 +89,8 @@ p:first-of-type{
   
 div:nth-child(2){
     background-color: darkolivegreen;
+}
+
+.define::before{
+    content: "This should be the reason. ";
 }

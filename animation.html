@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: yellow;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+p{
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in;
+}
+
+@keyframes example {
+    0%   {background-color:yellow; left:0px; top:0px;}
+  25%  {background-color:red; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:yellow ; left:0px; top:0px;}
+}
+
+@keyframes slide{
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p>
+    The Caterpillar and Alice looked at each other for some time in silence: at
+    last the Caterpillar took the hookah out of its mouth, and addressed her in a
+    languid, sleepy voice.
+  </p>
+
+
+
+</body>
+</html>

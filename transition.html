@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style> 
+        .div1 {
+          width: 100px;
+          height: 100px;
+          background: red;
+          transition: width 2s, height 4s,transform 3s;
+          transition-delay: 2s;
+        }
+        
+        .div1:hover {
+          width: 300px;
+          height: 300px;
+          transform: rotate(180deg);
+        }
+        .div2{
+            width: 100px;
+          height: 100px;
+          background: green;
+          transition: width 4s, height 6s;
+          transition-timing-function: ease-out;
+        }
+        .div2:hover{
+            width: 300px;
+          height: 300px;
+        }
+       
+        </style>
+</head>
+<body>
+    <div class="div1"> Transition</div><br><br>
+    <div class="div2"> Welcome</div>
+
+
+   
+</body>
+</html>

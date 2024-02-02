@@ -1,0 +1,12 @@
+.news{
+    column-count: 3;
+    column-gap: 30px;
+    column-rule-style: double;
+    column-rule-width: 10px;
+    column-rule-color: brown;
+    column-width: 50px;
+}
+
+h1{
+    column-span:all;
+}
