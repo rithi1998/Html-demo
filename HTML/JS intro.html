@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS intro</title>
+    <link rel="stylesheet" href="/CSS/JS intro.css">
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener("click", updateName);
+        function updateName() {
+            const name = prompt("Enter a new name");
+            button.textContent = `Player 1: ${name}`;
+            }
+    </script>
+    
+</head>
+<body>
+    <button type="button">Player 1: Thilak</button>
+</body>
+</html>

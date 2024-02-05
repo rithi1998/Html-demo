@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <!--<script>
+        window.localStoragewithExpiry={
+    setItem: function(key,value,expiryTime){
+        let result={
+            value,
+            expiryTime: Date.now()+expiryTime
+        };
+        localStorage.setItem(key,JSON.stringify(result));
+    },
+    getItem: function(key){
+        let data=localStorage.getItem(key);
+        data=JSON.parse(data);
+
+        if(data.expiryTIme <= Date.now()){
+            localStorage.removeItem(key);
+            return null;
+        }
+        return data.value;
+    },
+    removeItem: function(key){
+        localStorage.removeItem(key);
+    },
+    clear: function(){
+        localStorage.clear();
+    }
+
+
+}
+
+localStoragewithExpiry.setItem("abc","pqr","2000");
+setTimeout(()=>{
+    console.log(localStoragewithExpiry.getItem("abc"));
+},1500)
+        
+    </script>-->
+
+    <script>
+        // set 'bar' on 'foo' that will expiry after 1000 milliseconds
+myLocalStorage.setItem('foo', 'bar', 1000);
+
+// after 2 seconds
+console.log(myLocalStorage.getItem('foo'));
+// null
+        // add an entry
+  // default expiry is 30 days in milliseconds
+  setItem(key, value, maxAge = 30 * 60 * 60 * 1000) {
+     // store the value as the object
+     // along with the expiry date
+      let result  = {
+        data : value
+     }
+     
+     
+     if(maxAge){
+       // set the expiry 
+       // from the current date
+       result.expireTime = Date.now() + maxAge;
+     }
+     
+     // stringify the result
+     // and the data in original storage
+     window.localStorage.setItem(key, JSON.stringify(result));
+  }
+        window.myLocalStorage = {
+  getItem(key) {
+    // get the parsed value of the given key
+    let result = JSON.parse(window.localStorage.getItem(key));
+    
+    // if the key has value
+    if(result){ 
+        
+        // if the entry is expired
+        // remove the entry and return null
+        if(result.expireTime <= Date.now()){
+            window.localStorage.removeItem(key);
+            return null;
+        }  
+        
+        // else return the value
+        return result.data;
+    }
+    
+    // if the key does not have value
+    return null;
+  },
+  
+  // add an entry
+  // default expiry is 30 days in milliseconds
+  setItem(key, value, maxAge = 30 * 60 * 60 * 1000) {
+     // store the value as object
+     // along with expiry date
+      let result  = {
+        data : value
+     }
+     
+     
+     if(maxAge){
+       // set the expiry 
+       // from the current date
+       result.expireTime = Date.now() + maxAge;
+     }
+     
+     // stringify the result
+     // and the data in original storage
+     window.localStorage.setItem(key, JSON.stringify(result));
+  },
+  
+  // remove the entry with the given key
+  removeItem(key) {
+    window.localStorage.removeItem(key);
+  },
+  
+  // clear the storage
+  clear() {
+    window.localStorage.clear();
+  }
+};
+    </script>
+</body>
+</html>
