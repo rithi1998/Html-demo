@@ -1,6 +1,57 @@
-const datas=require('./objectProblems.json')
+//const datas=require('./objectProblems.json')
+// const fs=require('fs')
+// const json=fs.readFileSync('objectProblems.json','utf8')
+// const data=JSON.parse(json)
 
-
+const datas=[{
+    "name":"Mohamed",
+    "age":"12",
+    "academics":{
+    "sslc":"40",
+    "hsc":"70"
+    }
+    },
+    {
+    "name":"Yasin",
+    "age":"12",
+    "academics":{
+    "sslc":"60",
+    "hsc":"70"
+    }
+    },
+    {
+    "name":"Kamali",
+    "age":"12",
+    "academics":{
+    "sslc":"40",
+    "hsc":"90"
+    }
+    },
+    {
+    "name":"Abinaya",
+    "age":"12",
+    "academics":{
+    "sslc":"80",
+    "hsc":"70"
+    }
+    },
+    {
+    "name":"Aarthi",
+    "age":"12",
+    "academics":{
+    "sslc":"59",
+    "hsc":"20"
+    }
+    },
+    {
+    "name":"rakesh",
+    "age":"12",
+    "academics":{
+    "sslc":"100",
+    "hsc":"70"
+    }
+    }
+    ]
 //both mark should be more than 60
 console.log("Both mark should be more than 60: ")
 const requiredData=datas.filter(data=>{

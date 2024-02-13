@@ -8,8 +8,8 @@ class Employee{
     }
 }
 class Manager extends Employee{
-    constructor(Name,id,domain){
-        super(Name,id);
+    constructor(domain){
+        // super(Name,id);
         this.domain=domain;
     }
     manage(){
@@ -17,6 +17,6 @@ class Manager extends Employee{
     }
 }
 
-const newobject = new Manager("John", 111, "Lamp");
-newobject.employ();
+const newobject = new Manager("Lamp");
+// newobject.employ();
 newobject.manage();

@@ -1,13 +1,13 @@
-// class Introduce{
-//     username='Rithika';
-//     print(){
-//         console.log(username);
-//     }
-// }
+class Introduce{
+    username='Rithika';
+    print(){
+        console.log(username);
+    }
+}
 
-// let newobject= new Introduce();
-// newobject.username='Raj'
-// console.log(newobject.username)
+let newobject= new Introduce();
+newobject.username='Raj'
+console.log(newobject.username)
 
 
 

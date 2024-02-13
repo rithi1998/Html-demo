@@ -1,4 +1,4 @@
-/*// dot notation
+// dot notation
 
 const person = {
     name: ["Bob", "Smith"],
@@ -41,7 +41,7 @@ const person = {
 
   const john=new Newperson("John");
   john.name;
-  john.self(); */
+  john.self();
 
 
   obj1={

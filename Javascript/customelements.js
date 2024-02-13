@@ -9,11 +9,6 @@ class newElement extends HTMLElement{
     }
 }
 
-
-
-
-
-
 customElements.define("my-element",newElement)
 
 
